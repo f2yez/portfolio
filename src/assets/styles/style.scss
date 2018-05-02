@@ -1,0 +1,129 @@
+.body-area{
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 200px 50px 200px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  .layout {
+    flex-direction: row;
+    -webkit-box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.16);
+    box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.16);
+
+    .content-area {
+      padding: 80px 20px 80px 20px;
+      background: #f4f3f3;
+      min-height: 578px;
+      color: #78809d;
+
+      .big-title {
+        font-weight: normal;
+        font-size: 30px;
+      }
+
+      .card-col {
+        margin: 13px 26px 13px 0px;
+        .card-item {
+          .card-body {
+            text-align:center;
+          }
+          a {
+            color: #78809d;
+          }
+          i[class^=devicon-] {
+            font-size: 80px;
+          }
+        }
+      }
+
+      .about-area {
+        .big-title {
+          font-size: 50px !important;
+        }
+        .content-body {
+          p {
+            padding: 5px 0px 5px 0px;
+            font-size: 14px;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .contact-area, .about-area, .skills-area {
+        padding: 20px 0px 0px 20px;
+      }
+    }
+
+    #sidebar-area {
+      color: #78809d;
+      font-weight: bold;
+      text-align: center;
+      background: #ffffff;
+      .profile {
+        padding: 80px 0px 80px 0px;
+        .title {
+          padding-top: 15px;
+        }
+        .job-description {
+          color: #78809de8;
+        }
+        .avatar {
+          width: 75px;
+          height: 75px;
+          border-radius: 37px;
+          line-height: 70px;
+          font-size: 50px;
+        }
+        .hire-me {
+          background-color: #ec929b;
+          border-color: #ec929b;
+          margin-top: 50px;
+        }
+      }
+      .menu-item span {
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: bottom;
+        transition: width .2s ease .2s;
+      }
+      .menu-item i {
+        transform: translateX(0px);
+        transition: font-size .2s ease, transform .2s ease;
+        vertical-align: middle;
+        font-size: 16px;
+      }
+      .collapsed-menu span {
+        width: 0px;
+        transition: width .2s ease;
+      }
+      .collapsed-menu i {
+        transform: translateX(5px);
+        transition: font-size .2s ease .2s, transform .2s ease .2s;
+        vertical-align: middle;
+        font-size: 22px;
+      }
+      .profile {
+        background: #ffffff
+      }
+      .menu-item {
+        li {
+          background: #ffffff;
+          span{
+            color: #78809d;
+          }
+        }
+        li.ivu-menu-item.ivu-menu-item-selected,
+        li.ivu-menu-item.ivu-menu-item-selected:hover,
+        li.ivu-menu-item:hover {
+          background: #acb3d0 !important;
+          border-right: 2px solid #eeb7be !important;
+          span {
+            color: #ffffff !important;
+          }
+        }
+      }
+    }
+  }
+}
